@@ -606,7 +606,7 @@ There are several parameters that are specific to fixed sized strings.
     have all pad_bytes trimmed from the end of the string.  The value
     will not be trimmed when writing.
 
-        obj = BinData::String.new(:length => 6, :trim_value => true)
+        obj = BinData::String.new(:length => 6, :trim_padding => true)
         obj.assign("abcd")
         obj.snapshot #=> "abcd"
         obj.to_binary_s #=> "abcd\000\000"
